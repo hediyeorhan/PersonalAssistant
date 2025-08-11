@@ -1,4 +1,4 @@
-# Personal Assistant with MuktiAgent
+# Personal Assistant with MultiAgent
 
 Bu çalışmada Google AI tarafından geliştirilen yapay zekâ Gemini API'ı kullanılarak bir kişisel asistan projesi geliştirilmiştir. Projede multiagent yapılar kullanılmıştır. Kullanıcıdan alınan girdinin not mu, todo mu, hatırlatıcı mı olduğunu llm kendisi tanımlı promptları ile belirlemektedir. Karar verdikten sonra veri tabanı ile etkileşime girerek görevlerini yerine getirmektedir. Projede multiagent yapısı router ve promptlar yönetilmiştir.
 
