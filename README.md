@@ -1,6 +1,6 @@
-# Personal Assistant
+# Personal Assistant with MuktiAgent
 
-Bu çalışmada Google AI tarafından geliştirilen yapay zekâ Gemini API'ı kullanılarak bir kişisel asistan projesi geliştirilmiştir. 
+Bu çalışmada Google AI tarafından geliştirilen yapay zekâ Gemini API'ı kullanılarak bir kişisel asistan projesi geliştirilmiştir. Projede multiagent yapılar kullanılmıştır. Kullanıcıdan alınan girdinin not mu, todo mu, hatırlatıcı mı olduğunu llm kendisi tanımlı promptları ile belirlemektedir. Karar verdikten sonra veri tabanı ile etkileşime girerek görevlerini yerine getirmektedir. Projede multiagent yapısı router ve promptlar yönetilmiştir.
 
 Projede __.env__ dosyasında içeriğinde şu veriler bulunmaktadır.
 
@@ -83,7 +83,7 @@ Veri tabanından kullanıcının sorduğu soruya uygun bilgileri çeken ve getir
 <br>
 
 Kullanıcı bir todo eklemek istediğinde kod içerisinde kullanıcı isteği değerlendirilmektedir. Gerekli görülürse kullanıcıya hatırlatıcı eklemek ister misiniz şeklinde sorulmaktadır. Örnek çıktı Şekil 5'te görülmektedir.
-Hatırlatma tarihi/saati yaklaşan hatırlatmalar arayüz üzerinde yan panele görülmektedir. Yakın tarihli yeni bir hatırlatıcı eklendiğinde panel kendini güncellemektedir.
+Hatırlatma tarihi/saati yaklaşan hatırlatmalar arayüz üzerinde yan panelde görülmektedir. Yakın tarihli yeni bir hatırlatıcı eklendiğinde panel kendini güncellemektedir.
 
 <br>
 <br>
