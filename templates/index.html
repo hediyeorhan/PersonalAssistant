@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8" />
+    <title>Kişisel Asistan</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+    <div id="app-container">
+        <aside id="sidebar">
+            <h2>Yaklaşan Hatırlatıcılar</h2>
+            <ul id="reminder-list">
+                <!-- Backend ile dinamik doldurabilirsiniz -->
+                <li>Henüz hatırlatıcı yok</li>
+            </ul>
+
+            <div id="sidebar-footer">
+                © 2025 by <strong>Hediye Orhan</strong> 💙
+            </div>
+        </aside>
+
+        <main id="main-chat">
+            <header>
+                <h1>Kişisel Asistan</h1>
+            </header>
+
+            <section id="chat-box"></section>
+
+            <form id="input-area" onsubmit="return false;">
+                <input
+                    type="text"
+                    id="message"
+                    placeholder="Komutunuzu yazın..."
+                    autocomplete="off"
+                    autofocus
+                />
+                <button id="send-btn" title="Gönder">
+                    &#9658;
+                </button>
+            </form>
+        </main>
+    </div>
+
+    <!-- Hatırlatma Modal -->
+    <div id="reminder-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <div class="modal-content">
+            <p id="modal-title">Hatırlatma eklemek ister misiniz?</p>
+            <button id="reminder-yes">Evet</button>
+            <button id="reminder-no">Hayır</button>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
