@@ -56,7 +56,7 @@ Task Scheduler ile çalışan hatırlatıcı servisinin mail adresine hatırlatm
 <br>
 <br>
 <div align="center">
-<img src="https://github.com/user-attachments/assets/84893645-38d4-49f3-b9bd-5605ac9481a6" alt="image">
+<img src="https://github.com/user-attachments/assets/484c0d8e-7c3f-4736-a8cf-1f0ceff32298" alt="image">
 </div>
 Şekil 2. Hatırlatıcı mail uyarısı
 <br>
